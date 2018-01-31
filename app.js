@@ -24,6 +24,7 @@ function onMessage(message) {
 }
  
 wss.on('connection', function(ws) {
+	data = [];
 	ws.on('message', onMessage);
     ws.send('Welcome to the big Family!');
 });
