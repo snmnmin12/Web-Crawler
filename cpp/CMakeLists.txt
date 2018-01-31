@@ -1,4 +1,4 @@
-project(Path_Planning)
+project(Crawler)
 
 cmake_minimum_required (VERSION 3.5)
 
@@ -21,12 +21,9 @@ link_directories(/usr/local/Cellar/libuv/1.11.0/lib)
 
 endif(${CMAKE_SYSTEM_NAME} MATCHES "Darwin") 
 
-#add_executable(demo ${sources})
-#target_link_libraries(demo z ssl uv uWS)
-
-add_executable(server src/server.cpp)
-target_link_libraries(server z ssl uv uWS)
+#add_executable(server src/server.cpp)
+#target_link_libraries(server z ssl uv uWS)
 
 
-add_executable(main ${HW1.4})
-target_link_libraries(main z ssl uv uWS)
+add_executable(crawler ${HW1.4})
+target_link_libraries(crawler z ssl uv uWS)

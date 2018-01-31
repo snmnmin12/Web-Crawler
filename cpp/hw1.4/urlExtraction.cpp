@@ -1,3 +1,5 @@
+//Created by Mingmin Song on 1/28/18.
+
 #include "urlExtraction.h"
 
 std::set<std::string> extract_hyperlinks( const std::string& text, std::string& url)
